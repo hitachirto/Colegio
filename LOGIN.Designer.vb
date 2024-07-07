@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class LOGIN
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,12 +22,12 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LOGIN))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtlogin = New System.Windows.Forms.TextBox()
+        Me.txtpassword = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -70,24 +70,24 @@ Partial Class Form1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "ACCEDER"
         '
-        'TextBox1
+        'txtlogin
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(104, 293)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(288, 15)
-        Me.TextBox1.TabIndex = 3
-        Me.TextBox1.Text = "USUARIO"
+        Me.txtlogin.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtlogin.Location = New System.Drawing.Point(104, 293)
+        Me.txtlogin.Name = "txtlogin"
+        Me.txtlogin.Size = New System.Drawing.Size(288, 15)
+        Me.txtlogin.TabIndex = 3
+        Me.txtlogin.Text = "USUARIO"
         '
-        'TextBox2
+        'txtpassword
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Location = New System.Drawing.Point(104, 354)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(288, 15)
-        Me.TextBox2.TabIndex = 4
-        Me.TextBox2.Text = "PASSWORD"
+        Me.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtpassword.Location = New System.Drawing.Point(104, 354)
+        Me.txtpassword.Name = "txtpassword"
+        Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtpassword.Size = New System.Drawing.Size(288, 15)
+        Me.txtpassword.TabIndex = 4
+        Me.txtpassword.Text = "PASSWORD"
         '
         'Panel1
         '
@@ -146,8 +146,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtpassword)
+        Me.Controls.Add(Me.txtlogin)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
@@ -167,8 +167,8 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtlogin As TextBox
+    Friend WithEvents txtpassword As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
