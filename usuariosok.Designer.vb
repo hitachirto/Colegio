@@ -42,9 +42,9 @@ Partial Class usuariosok
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtLogin = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtNOMBRE = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -55,6 +55,7 @@ Partial Class usuariosok
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Lblidusuario = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -146,15 +147,16 @@ Partial Class usuariosok
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.Lblidusuario)
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Controls.Add(Me.TextBox3)
-        Me.Panel4.Controls.Add(Me.TextBox2)
-        Me.Panel4.Controls.Add(Me.TextBox1)
+        Me.Panel4.Controls.Add(Me.txtLogin)
+        Me.Panel4.Controls.Add(Me.txtPassword)
+        Me.Panel4.Controls.Add(Me.txtNOMBRE)
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.MenuStrip2)
-        Me.Panel4.Location = New System.Drawing.Point(150, 178)
+        Me.Panel4.Location = New System.Drawing.Point(207, 191)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(650, 337)
         Me.Panel4.TabIndex = 4
@@ -266,26 +268,26 @@ Partial Class usuariosok
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Asignacion de Permisos"
         '
-        'TextBox3
+        'txtLogin
         '
-        Me.TextBox3.Location = New System.Drawing.Point(165, 58)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(233, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txtLogin.Location = New System.Drawing.Point(165, 58)
+        Me.txtLogin.Name = "txtLogin"
+        Me.txtLogin.Size = New System.Drawing.Size(233, 20)
+        Me.txtLogin.TabIndex = 5
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(165, 94)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtPassword.Location = New System.Drawing.Point(165, 94)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassword.TabIndex = 4
         '
-        'TextBox1
+        'txtNOMBRE
         '
-        Me.TextBox1.Location = New System.Drawing.Point(165, 27)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(233, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtNOMBRE.Location = New System.Drawing.Point(165, 27)
+        Me.txtNOMBRE.Name = "txtNOMBRE"
+        Me.txtNOMBRE.Size = New System.Drawing.Size(233, 20)
+        Me.txtNOMBRE.TabIndex = 3
         '
         'Label4
         '
@@ -324,7 +326,7 @@ Partial Class usuariosok
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GUARDARToolStripMenuItem, Me.GUARDARCAMBIOSToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(36, 186)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(282, 29)
+        Me.MenuStrip2.Size = New System.Drawing.Size(402, 29)
         Me.MenuStrip2.TabIndex = 7
         Me.MenuStrip2.Text = "MenuStrip2"
         '
@@ -357,10 +359,10 @@ Partial Class usuariosok
         Me.datalistado.BackgroundColor = System.Drawing.Color.White
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.datalistado.Location = New System.Drawing.Point(0, 0)
+        Me.datalistado.Location = New System.Drawing.Point(0, 173)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(971, 556)
+        Me.datalistado.Size = New System.Drawing.Size(843, 383)
         Me.datalistado.TabIndex = 3
         '
         'PictureBox1
@@ -382,6 +384,15 @@ Partial Class usuariosok
         Me.Panel2.Size = New System.Drawing.Size(128, 383)
         Me.Panel2.TabIndex = 8
         '
+        'Lblidusuario
+        '
+        Me.Lblidusuario.AutoSize = True
+        Me.Lblidusuario.Location = New System.Drawing.Point(420, 32)
+        Me.Lblidusuario.Name = "Lblidusuario"
+        Me.Lblidusuario.Size = New System.Drawing.Size(39, 13)
+        Me.Lblidusuario.TabIndex = 8
+        Me.Lblidusuario.Text = "Label6"
+        '
         'usuariosok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -389,10 +400,10 @@ Partial Class usuariosok
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(971, 556)
         Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.datalistado)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.datalistado)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "usuariosok"
@@ -425,9 +436,9 @@ Partial Class usuariosok
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents datalistado As DataGridView
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtLogin As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtNOMBRE As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -447,4 +458,5 @@ Partial Class usuariosok
     Friend WithEvents MenuStrip2 As MenuStrip
     Friend WithEvents GUARDARToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GUARDARCAMBIOSToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Lblidusuario As Label
 End Class
