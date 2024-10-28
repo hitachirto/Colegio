@@ -26,6 +26,7 @@ Public Class usuariosok
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Panel4.Visible = True
+        GUARDARToolStripMenuItem.Visible = True
 
     End Sub
 
@@ -75,10 +76,10 @@ Public Class usuariosok
             Panel4.Visible = True
             GUARDARToolStripMenuItem.Visible = False
             GUARDARCAMBIOSToolStripMenuItem.Visible = True
-            txtNOMBRE.Text = datalistado.SelectedCells.Item(1).Value
-            txtLogin.Text = datalistado.SelectedCells.Item(2).Value
-            txtPassword.Text = datalistado.SelectedCells.Item(3).Value
-            Lblidusuario.Text = datalistado.SelectedCells.Item(0).Value
+            txtNOMBRE.Text = datalistado.SelectedCells.Item(2).Value
+            txtLogin.Text = datalistado.SelectedCells.Item(3).Value
+            txtPassword.Text = datalistado.SelectedCells.Item(4).Value
+            Lblidusuario.Text = datalistado.SelectedCells.Item(1).Value
 
 
         Catch ex As Exception
@@ -109,5 +110,53 @@ Public Class usuariosok
         Catch ex As Exception : MsgBox(ex.Message)
 
         End Try
+    End Sub
+
+    Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
+        If e.ColumnIndex = Me.datalistado.Columns.Item("Eli").Index Then
+            Dim result As DialogResult
+            result = MessageBox.Show("¿realmente desea eliminar este usuario?", "Eliminando registros", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+            If result = DialogResult.OK Then
+                Try
+                    Dim cmd As New SqlCommand
+                    abrir()
+                    cmd = New SqlCommand("eliminar_usuario", conexion)
+                    cmd.CommandType = 4
+                    cmd.Parameters.AddWithValue("@idusuario", datalistado.SelectedCells.Item(1).Value)
+
+                    cmd.ExecuteNonQuery()
+                    cerrar()
+                    MOSTRAR()
+
+
+
+                Catch ex As Exception : MsgBox(ex.Message)
+
+                End Try
+            Else
+                MessageBox.Show("cancelando eliminacion de registros", "Eliminando registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End If
+    End Sub
+    Sub buscar()
+        Dim dt As New DataTable
+        Dim da As SqlDataAdapter
+        Try
+            abrir()
+            da = New SqlDataAdapter("buscar_usuarios", conexion)
+            da.SelectCommand.CommandType = 4
+            da.SelectCommand.Parameters.AddWithValue("@letra", txtbuscar.Text)
+
+            da.Fill(dt)
+            datalistado.DataSource = dt
+            cerrar()
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Private Sub txtbuscar_TextChanged(sender As Object, e As EventArgs) Handles txtbuscar.TextChanged
+        buscar()
+
     End Sub
 End Class

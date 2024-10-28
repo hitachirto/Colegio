@@ -32,6 +32,7 @@ Partial Class usuariosok
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Lblidusuario = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
@@ -53,9 +54,9 @@ Partial Class usuariosok
         Me.GUARDARCAMBIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Lblidusuario = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -160,6 +161,15 @@ Partial Class usuariosok
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(650, 337)
         Me.Panel4.TabIndex = 4
+        '
+        'Lblidusuario
+        '
+        Me.Lblidusuario.AutoSize = True
+        Me.Lblidusuario.Location = New System.Drawing.Point(420, 32)
+        Me.Lblidusuario.Name = "Lblidusuario"
+        Me.Lblidusuario.Size = New System.Drawing.Size(39, 13)
+        Me.Lblidusuario.TabIndex = 8
+        Me.Lblidusuario.Text = "Label6"
         '
         'Panel5
         '
@@ -326,7 +336,7 @@ Partial Class usuariosok
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GUARDARToolStripMenuItem, Me.GUARDARCAMBIOSToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(36, 186)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(402, 29)
+        Me.MenuStrip2.Size = New System.Drawing.Size(282, 29)
         Me.MenuStrip2.TabIndex = 7
         Me.MenuStrip2.Text = "MenuStrip2"
         '
@@ -358,17 +368,26 @@ Partial Class usuariosok
         Me.datalistado.AllowUserToResizeRows = False
         Me.datalistado.BackgroundColor = System.Drawing.Color.White
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
         Me.datalistado.Dock = System.Windows.Forms.DockStyle.Fill
         Me.datalistado.Location = New System.Drawing.Point(0, 173)
         Me.datalistado.Name = "datalistado"
+        Me.datalistado.RowHeadersVisible = False
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(843, 383)
         Me.datalistado.TabIndex = 3
         '
+        'Eli
+        '
+        Me.Eli.HeaderText = ""
+        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
+        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eli.Name = "Eli"
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 105)
+        Me.PictureBox1.Location = New System.Drawing.Point(20, 126)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(108, 101)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -383,15 +402,6 @@ Partial Class usuariosok
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(128, 383)
         Me.Panel2.TabIndex = 8
-        '
-        'Lblidusuario
-        '
-        Me.Lblidusuario.AutoSize = True
-        Me.Lblidusuario.Location = New System.Drawing.Point(420, 32)
-        Me.Lblidusuario.Name = "Lblidusuario"
-        Me.Lblidusuario.Size = New System.Drawing.Size(39, 13)
-        Me.Lblidusuario.TabIndex = 8
-        Me.Lblidusuario.Text = "Label6"
         '
         'usuariosok
         '
@@ -459,4 +469,5 @@ Partial Class usuariosok
     Friend WithEvents GUARDARToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GUARDARCAMBIOSToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Lblidusuario As Label
+    Friend WithEvents Eli As DataGridViewImageColumn
 End Class
