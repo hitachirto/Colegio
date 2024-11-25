@@ -61,8 +61,9 @@ Public Class usuariosok
             da.Fill(dt)
             datalistado.DataSource = dt
             cerrar()
+            Multilinea(datalistado)
 
-        Catch ex As Exception
+        Catch ex As Exception : MessageBox.Show(ex.Message)
 
         End Try
     End Sub

@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion\CONEXIONMAESTRA.vb" />
+    <Compile Include="conexion\Tamaño_automatico_de_datatables.vb" />
     <Compile Include="LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +131,8 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MODULOS\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
