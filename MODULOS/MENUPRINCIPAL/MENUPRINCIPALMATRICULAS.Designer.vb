@@ -42,17 +42,28 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.datalistado = New System.Windows.Forms.DataGridView()
-        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.MenuStrip7 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -64,13 +75,16 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel6.SuspendLayout()
+        Me.MenuStrip6.SuspendLayout()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel6.SuspendLayout()
-        Me.MenuStrip6.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel7.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.MenuStrip7.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -84,7 +98,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1134, 63)
+        Me.Panel1.Size = New System.Drawing.Size(927, 63)
         Me.Panel1.TabIndex = 0
         '
         'MenuStrip2
@@ -117,7 +131,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel3.Controls.Add(Me.MenuStrip5)
         Me.Panel3.Controls.Add(Me.MenuStrip4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel3.Location = New System.Drawing.Point(848, 0)
+        Me.Panel3.Location = New System.Drawing.Point(641, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(286, 63)
         Me.Panel3.TabIndex = 12
@@ -278,8 +292,103 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel4.Location = New System.Drawing.Point(0, 63)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(358, 568)
+        Me.Panel4.Size = New System.Drawing.Size(358, 579)
         Me.Panel4.TabIndex = 1
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn1})
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.EnableHeadersVisualStyles = False
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 99)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(358, 359)
+        Me.DataGridView1.TabIndex = 6
+        '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = ""
+        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.MenuStrip6)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel6.Location = New System.Drawing.Point(0, 458)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(358, 121)
+        Me.Panel6.TabIndex = 5
+        '
+        'MenuStrip6
+        '
+        Me.MenuStrip6.BackColor = System.Drawing.Color.White
+        Me.MenuStrip6.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip6.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6})
+        Me.MenuStrip6.Location = New System.Drawing.Point(9, 12)
+        Me.MenuStrip6.Name = "MenuStrip6"
+        Me.MenuStrip6.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip6.Size = New System.Drawing.Size(210, 29)
+        Me.MenuStrip6.TabIndex = 8
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem6.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.ToolStripMenuItem6.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem6.Image = CType(resources.GetObject("ToolStripMenuItem6.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(204, 25)
+        Me.ToolStripMenuItem6.Text = "agregar OTROS PAGOS"
+        '
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AllowUserToResizeRows = False
+        Me.datalistado.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.datalistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
+        Me.datalistado.EnableHeadersVisualStyles = False
+        Me.datalistado.Location = New System.Drawing.Point(416, 8)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.ReadOnly = True
+        Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.RowHeadersVisible = False
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(435, 383)
+        Me.datalistado.TabIndex = 4
+        '
+        'Eli
+        '
+        Me.Eli.HeaderText = ""
+        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
+        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eli.Name = "Eli"
+        Me.Eli.ReadOnly = True
         '
         'Panel5
         '
@@ -323,106 +432,123 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
-        'datalistado
+        'Panel7
         '
-        Me.datalistado.AllowUserToAddRows = False
-        Me.datalistado.AllowUserToDeleteRows = False
-        Me.datalistado.AllowUserToResizeRows = False
-        Me.datalistado.BackgroundColor = System.Drawing.Color.White
-        Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.datalistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
-        Me.datalistado.EnableHeadersVisualStyles = False
-        Me.datalistado.Location = New System.Drawing.Point(416, 8)
-        Me.datalistado.Name = "datalistado"
-        Me.datalistado.ReadOnly = True
-        Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.datalistado.RowHeadersVisible = False
-        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
-        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(435, 383)
-        Me.datalistado.TabIndex = 4
+        Me.Panel7.Controls.Add(Me.Panel8)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel7.Location = New System.Drawing.Point(358, 63)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(569, 579)
+        Me.Panel7.TabIndex = 2
         '
-        'Eli
+        'Panel8
         '
-        Me.Eli.HeaderText = ""
-        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
-        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.Eli.Name = "Eli"
-        Me.Eli.ReadOnly = True
+        Me.Panel8.Controls.Add(Me.Panel12)
+        Me.Panel8.Controls.Add(Me.Panel11)
+        Me.Panel8.Controls.Add(Me.Panel10)
+        Me.Panel8.Controls.Add(Me.Panel9)
+        Me.Panel8.Controls.Add(Me.MenuStrip7)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel8.Location = New System.Drawing.Point(0, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(569, 69)
+        Me.Panel8.TabIndex = 0
         '
-        'Panel6
+        'MenuStrip7
         '
-        Me.Panel6.Controls.Add(Me.MenuStrip6)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel6.Location = New System.Drawing.Point(0, 447)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(358, 121)
-        Me.Panel6.TabIndex = 5
+        Me.MenuStrip7.AutoSize = False
+        Me.MenuStrip7.BackColor = System.Drawing.Color.White
+        Me.MenuStrip7.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem10, Me.ToolStripMenuItem9, Me.ToolStripMenuItem8, Me.ToolStripMenuItem7})
+        Me.MenuStrip7.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip7.Name = "MenuStrip7"
+        Me.MenuStrip7.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip7.Size = New System.Drawing.Size(569, 63)
+        Me.MenuStrip7.TabIndex = 8
+        Me.MenuStrip7.Text = "MenuStrip7"
         '
-        'MenuStrip6
+        'ToolStripMenuItem7
         '
-        Me.MenuStrip6.BackColor = System.Drawing.Color.White
-        Me.MenuStrip6.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip6.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6})
-        Me.MenuStrip6.Location = New System.Drawing.Point(9, 12)
-        Me.MenuStrip6.Name = "MenuStrip6"
-        Me.MenuStrip6.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip6.Size = New System.Drawing.Size(210, 29)
-        Me.MenuStrip6.TabIndex = 8
+        Me.ToolStripMenuItem7.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem7.Image = CType(resources.GetObject("ToolStripMenuItem7.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(133, 25)
+        Me.ToolStripMenuItem7.Text = "Otros Pagos"
         '
-        'ToolStripMenuItem6
+        'ToolStripMenuItem8
         '
-        Me.ToolStripMenuItem6.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStripMenuItem6.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.ToolStripMenuItem6.ForeColor = System.Drawing.Color.Black
-        Me.ToolStripMenuItem6.Image = CType(resources.GetObject("ToolStripMenuItem6.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(204, 25)
-        Me.ToolStripMenuItem6.Text = "agregar OTROS PAGOS"
+        Me.ToolStripMenuItem8.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem8.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem8.Image = CType(resources.GetObject("ToolStripMenuItem8.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(87, 25)
+        Me.ToolStripMenuItem8.Text = "Notas"
         '
-        'DataGridView1
+        'ToolStripMenuItem9
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn1})
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 99)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(358, 348)
-        Me.DataGridView1.TabIndex = 6
+        Me.ToolStripMenuItem9.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem9.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem9.Image = CType(resources.GetObject("ToolStripMenuItem9.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(143, 25)
+        Me.ToolStripMenuItem9.Text = "Movimientos"
         '
-        'DataGridViewImageColumn1
+        'ToolStripMenuItem10
         '
-        Me.DataGridViewImageColumn1.HeaderText = ""
-        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.ToolStripMenuItem10.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem10.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem10.Image = CType(resources.GetObject("ToolStripMenuItem10.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(88, 25)
+        Me.ToolStripMenuItem10.Text = "Pagos"
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.Teal
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel9.Location = New System.Drawing.Point(0, 63)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(90, 6)
+        Me.Panel9.TabIndex = 9
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.Yellow
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel10.Location = New System.Drawing.Point(90, 63)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(140, 6)
+        Me.Panel10.TabIndex = 10
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel11.Location = New System.Drawing.Point(230, 63)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(94, 6)
+        Me.Panel11.TabIndex = 11
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel12.Location = New System.Drawing.Point(324, 63)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(129, 6)
+        Me.Panel12.TabIndex = 12
         '
         'MENUPRINCIPALMATRICULAS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1134, 631)
+        Me.ClientSize = New System.Drawing.Size(927, 642)
+        Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "MENUPRINCIPALMATRICULAS"
@@ -447,16 +573,20 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.MenuStrip6.ResumeLayout(False)
         Me.MenuStrip6.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.MenuStrip7.ResumeLayout(False)
+        Me.MenuStrip7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -491,4 +621,15 @@ Partial Class MENUPRINCIPALMATRICULAS
     Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents MenuStrip7 As MenuStrip
+    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents Panel10 As Panel
 End Class
