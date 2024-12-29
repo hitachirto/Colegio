@@ -75,6 +75,12 @@
   <ItemGroup>
     <Compile Include="conexion\CONEXIONMAESTRA.vb" />
     <Compile Include="conexion\Tamaño_automatico_de_datatables.vb" />
+    <Compile Include="MODULOS\ALUMNOS\Alumnos_form.Designer.vb">
+      <DependentUpon>Alumnos_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ALUMNOS\Alumnos_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MODULOS\LOGIN\LOGIN.Designer.vb">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </Compile>
