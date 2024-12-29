@@ -117,6 +117,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MODULOS\ALUMNOS\Alumnos_form.resx">
+      <DependentUpon>Alumnos_form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </EmbeddedResource>
