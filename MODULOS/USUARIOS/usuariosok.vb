@@ -27,6 +27,10 @@ Public Class usuariosok
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Panel4.Visible = True
         GUARDARToolStripMenuItem.Visible = True
+        txtLogin.Clear()
+        txtNOMBRE.Clear()
+        txtPassword.Clear()
+
 
     End Sub
 
@@ -62,6 +66,7 @@ Public Class usuariosok
             datalistado.DataSource = dt
             cerrar()
             Multilinea(datalistado)
+            datalistado.Columns(1).Visible = False
 
         Catch ex As Exception : MessageBox.Show(ex.Message)
 
@@ -158,6 +163,14 @@ Public Class usuariosok
     End Sub
     Private Sub txtbuscar_TextChanged(sender As Object, e As EventArgs) Handles txtbuscar.TextChanged
         buscar()
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Panel4.Visible = False
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 End Class

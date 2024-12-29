@@ -57,6 +57,8 @@ Partial Class usuariosok
         Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -66,6 +68,7 @@ Partial Class usuariosok
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -148,7 +151,8 @@ Partial Class usuariosok
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.Lblidusuario)
+        Me.Panel4.Controls.Add(Me.Panel6)
+        Me.Panel4.Controls.Add(Me.Button2)
         Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.txtLogin)
         Me.Panel4.Controls.Add(Me.txtPassword)
@@ -157,15 +161,15 @@ Partial Class usuariosok
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.MenuStrip2)
-        Me.Panel4.Location = New System.Drawing.Point(207, 191)
+        Me.Panel4.Location = New System.Drawing.Point(0, 173)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(650, 337)
+        Me.Panel4.Size = New System.Drawing.Size(823, 337)
         Me.Panel4.TabIndex = 4
         '
         'Lblidusuario
         '
         Me.Lblidusuario.AutoSize = True
-        Me.Lblidusuario.Location = New System.Drawing.Point(420, 32)
+        Me.Lblidusuario.Location = New System.Drawing.Point(30, 35)
         Me.Lblidusuario.Name = "Lblidusuario"
         Me.Lblidusuario.Size = New System.Drawing.Size(39, 13)
         Me.Lblidusuario.TabIndex = 8
@@ -182,7 +186,7 @@ Partial Class usuariosok
         Me.Panel5.Controls.Add(Me.CheckBox2)
         Me.Panel5.Controls.Add(Me.CheckBox1)
         Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Location = New System.Drawing.Point(361, 95)
+        Me.Panel5.Location = New System.Drawing.Point(361, 240)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(289, 242)
         Me.Panel5.TabIndex = 6
@@ -382,7 +386,7 @@ Partial Class usuariosok
         Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(843, 383)
+        Me.datalistado.Size = New System.Drawing.Size(823, 383)
         Me.datalistado.TabIndex = 3
         '
         'Eli
@@ -391,6 +395,7 @@ Partial Class usuariosok
         Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
         Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
         Me.Eli.Name = "Eli"
+        Me.Eli.ReadOnly = True
         '
         'PictureBox1
         '
@@ -406,10 +411,29 @@ Partial Class usuariosok
         '
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(843, 173)
+        Me.Panel2.Location = New System.Drawing.Point(823, 173)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(128, 383)
+        Me.Panel2.Size = New System.Drawing.Size(148, 383)
         Me.Panel2.TabIndex = 8
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Button2.Location = New System.Drawing.Point(343, 186)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 29)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Volver"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.Lblidusuario)
+        Me.Panel6.Location = New System.Drawing.Point(447, 59)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(34, 35)
+        Me.Panel6.TabIndex = 10
         '
         'usuariosok
         '
@@ -425,6 +449,7 @@ Partial Class usuariosok
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "usuariosok"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "usuariosok"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -441,6 +466,8 @@ Partial Class usuariosok
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -478,4 +505,6 @@ Partial Class usuariosok
     Friend WithEvents GUARDARCAMBIOSToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Lblidusuario As Label
     Friend WithEvents Eli As DataGridViewImageColumn
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Panel6 As Panel
 End Class
