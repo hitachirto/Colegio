@@ -32,7 +32,9 @@ Partial Class usuariosok
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Lblidusuario = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
@@ -57,18 +59,16 @@ Partial Class usuariosok
         Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -153,7 +153,6 @@ Partial Class usuariosok
         '
         Me.Panel4.Controls.Add(Me.Panel6)
         Me.Panel4.Controls.Add(Me.Button2)
-        Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.txtLogin)
         Me.Panel4.Controls.Add(Me.txtPassword)
         Me.Panel4.Controls.Add(Me.txtNOMBRE)
@@ -161,10 +160,18 @@ Partial Class usuariosok
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.MenuStrip2)
-        Me.Panel4.Location = New System.Drawing.Point(0, 173)
+        Me.Panel4.Location = New System.Drawing.Point(28, 173)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(823, 337)
+        Me.Panel4.Size = New System.Drawing.Size(795, 337)
         Me.Panel4.TabIndex = 4
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.Lblidusuario)
+        Me.Panel6.Location = New System.Drawing.Point(447, 59)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(34, 35)
+        Me.Panel6.TabIndex = 10
         '
         'Lblidusuario
         '
@@ -174,6 +181,17 @@ Partial Class usuariosok
         Me.Lblidusuario.Size = New System.Drawing.Size(39, 13)
         Me.Lblidusuario.TabIndex = 8
         Me.Lblidusuario.Text = "Label6"
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Button2.Location = New System.Drawing.Point(343, 186)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 29)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Volver"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -186,7 +204,7 @@ Partial Class usuariosok
         Me.Panel5.Controls.Add(Me.CheckBox2)
         Me.Panel5.Controls.Add(Me.CheckBox1)
         Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Location = New System.Drawing.Point(361, 240)
+        Me.Panel5.Location = New System.Drawing.Point(397, 516)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(289, 242)
         Me.Panel5.TabIndex = 6
@@ -416,25 +434,6 @@ Partial Class usuariosok
         Me.Panel2.Size = New System.Drawing.Size(148, 383)
         Me.Panel2.TabIndex = 8
         '
-        'Button2
-        '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.Button2.Location = New System.Drawing.Point(343, 186)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(85, 29)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Volver"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Lblidusuario)
-        Me.Panel6.Location = New System.Drawing.Point(447, 59)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(34, 35)
-        Me.Panel6.TabIndex = 10
-        '
         'usuariosok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -442,6 +441,7 @@ Partial Class usuariosok
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(971, 556)
         Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.datalistado)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
@@ -459,6 +459,8 @@ Partial Class usuariosok
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.MenuStrip2.ResumeLayout(False)
@@ -466,8 +468,6 @@ Partial Class usuariosok
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

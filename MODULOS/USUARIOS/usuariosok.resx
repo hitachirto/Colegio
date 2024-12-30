@@ -352,9 +352,6 @@
   <metadata name="MenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>404, 17</value>
   </metadata>
-  <metadata name="MenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>404, 17</value>
-  </metadata>
   <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>247, 17</value>
   </metadata>
@@ -367,7 +364,7 @@
   <data name="Eli.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEXkSURBVHhe7Z0H
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEXkSURBVHhe7Z0H
         eB1XmbAV0oCQQAi9syQ0EVlzjhyh2JqZa4fwBwgLBNP+pUOoP53QWfpSlqUty3oXFgg9lKW3EHpZQoCl
         mAAJcWxpZmQ7Ti+OHVv/d+QvsTI61i26kubMvO/zvI8S657ROXO+c+bce2fONwAA1Wdjmt40i1feNU+j
         kSyNTigSuy5PzDOLxLxcfr41S8wH88R+XP77DPGb4pni2eJvxL/d2Gi7/LzY40bxhtfJsX8nP88pYvO9

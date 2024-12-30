@@ -31,10 +31,31 @@ Partial Class Alumnos_form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Lblidusuario = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtapellidoMaterno = New System.Windows.Forms.TextBox()
+        Me.txtnombres = New System.Windows.Forms.TextBox()
+        Me.txtapellidoPaterno = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
+        Me.GUARDARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GUARDARCAMBIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtdocumento = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.MenuStrip3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -126,11 +147,187 @@ Partial Class Alumnos_form
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(94, 43)
         Me.ToolStripMenuItem2.Text = "Agregar"
         '
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AllowUserToResizeRows = False
+        Me.datalistado.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.datalistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
+        Me.datalistado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.datalistado.EnableHeadersVisualStyles = False
+        Me.datalistado.Location = New System.Drawing.Point(0, 75)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.ReadOnly = True
+        Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.RowHeadersVisible = False
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(800, 492)
+        Me.datalistado.TabIndex = 4
+        '
+        'Eli
+        '
+        Me.Eli.HeaderText = ""
+        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
+        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eli.Name = "Eli"
+        Me.Eli.ReadOnly = True
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.txtdocumento)
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Controls.Add(Me.Panel6)
+        Me.Panel4.Controls.Add(Me.Button2)
+        Me.Panel4.Controls.Add(Me.txtapellidoMaterno)
+        Me.Panel4.Controls.Add(Me.txtnombres)
+        Me.Panel4.Controls.Add(Me.txtapellidoPaterno)
+        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Controls.Add(Me.Label3)
+        Me.Panel4.Controls.Add(Me.Label2)
+        Me.Panel4.Controls.Add(Me.MenuStrip3)
+        Me.Panel4.Location = New System.Drawing.Point(3, 115)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(795, 337)
+        Me.Panel4.TabIndex = 5
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.Lblidusuario)
+        Me.Panel6.Location = New System.Drawing.Point(447, 59)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(34, 35)
+        Me.Panel6.TabIndex = 10
+        '
+        'Lblidusuario
+        '
+        Me.Lblidusuario.AutoSize = True
+        Me.Lblidusuario.Location = New System.Drawing.Point(30, 35)
+        Me.Lblidusuario.Name = "Lblidusuario"
+        Me.Lblidusuario.Size = New System.Drawing.Size(39, 13)
+        Me.Lblidusuario.TabIndex = 8
+        Me.Lblidusuario.Text = "Label6"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Button2.Location = New System.Drawing.Point(313, 186)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 29)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Volver"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'txtapellidoMaterno
+        '
+        Me.txtapellidoMaterno.Location = New System.Drawing.Point(165, 58)
+        Me.txtapellidoMaterno.Name = "txtapellidoMaterno"
+        Me.txtapellidoMaterno.Size = New System.Drawing.Size(233, 20)
+        Me.txtapellidoMaterno.TabIndex = 5
+        '
+        'txtnombres
+        '
+        Me.txtnombres.Location = New System.Drawing.Point(165, 94)
+        Me.txtnombres.Name = "txtnombres"
+        Me.txtnombres.Size = New System.Drawing.Size(233, 20)
+        Me.txtnombres.TabIndex = 4
+        '
+        'txtapellidoPaterno
+        '
+        Me.txtapellidoPaterno.Location = New System.Drawing.Point(165, 27)
+        Me.txtapellidoPaterno.Name = "txtapellidoPaterno"
+        Me.txtapellidoPaterno.Size = New System.Drawing.Size(233, 20)
+        Me.txtapellidoPaterno.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label4.Location = New System.Drawing.Point(32, 58)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(128, 20)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Apellido Materno"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label3.Location = New System.Drawing.Point(32, 94)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(73, 20)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Nombres"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label2.Location = New System.Drawing.Point(32, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(125, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Apellido Paterno"
+        '
+        'MenuStrip3
+        '
+        Me.MenuStrip3.BackColor = System.Drawing.Color.Transparent
+        Me.MenuStrip3.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GUARDARToolStripMenuItem, Me.GUARDARCAMBIOSToolStripMenuItem})
+        Me.MenuStrip3.Location = New System.Drawing.Point(28, 186)
+        Me.MenuStrip3.Name = "MenuStrip3"
+        Me.MenuStrip3.Size = New System.Drawing.Size(282, 29)
+        Me.MenuStrip3.TabIndex = 7
+        Me.MenuStrip3.Text = "MenuStrip3"
+        '
+        'GUARDARToolStripMenuItem
+        '
+        Me.GUARDARToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.GUARDARToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.GUARDARToolStripMenuItem.Name = "GUARDARToolStripMenuItem"
+        Me.GUARDARToolStripMenuItem.Size = New System.Drawing.Size(99, 25)
+        Me.GUARDARToolStripMenuItem.Text = "GUARDAR"
+        '
+        'GUARDARCAMBIOSToolStripMenuItem
+        '
+        Me.GUARDARCAMBIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.GUARDARCAMBIOSToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.GUARDARCAMBIOSToolStripMenuItem.Name = "GUARDARCAMBIOSToolStripMenuItem"
+        Me.GUARDARCAMBIOSToolStripMenuItem.Size = New System.Drawing.Size(175, 25)
+        Me.GUARDARCAMBIOSToolStripMenuItem.Text = "GUARDAR CAMBIOS"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label5.Location = New System.Drawing.Point(32, 130)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(135, 20)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Nº de Documento"
+        '
+        'txtdocumento
+        '
+        Me.txtdocumento.Location = New System.Drawing.Point(165, 130)
+        Me.txtdocumento.Name = "txtdocumento"
+        Me.txtdocumento.Size = New System.Drawing.Size(233, 20)
+        Me.txtdocumento.TabIndex = 12
+        '
         'Alumnos_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 567)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.datalistado)
         Me.Controls.Add(Me.Panel1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Alumnos_form"
@@ -144,6 +341,13 @@ Partial Class Alumnos_form
         Me.MenuStrip1.PerformLayout()
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.MenuStrip3.ResumeLayout(False)
+        Me.MenuStrip3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -156,4 +360,21 @@ Partial Class Alumnos_form
     Friend WithEvents Label1 As Label
     Friend WithEvents MenuStrip2 As MenuStrip
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents datalistado As DataGridView
+    Friend WithEvents Eli As DataGridViewImageColumn
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Lblidusuario As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents txtapellidoMaterno As TextBox
+    Friend WithEvents txtnombres As TextBox
+    Friend WithEvents txtapellidoPaterno As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents MenuStrip3 As MenuStrip
+    Friend WithEvents GUARDARToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GUARDARCAMBIOSToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents txtdocumento As TextBox
+    Friend WithEvents Label5 As Label
 End Class
