@@ -22,6 +22,7 @@ Partial Class Alumnos_form
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Alumnos_form))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
@@ -48,6 +49,8 @@ Partial Class Alumnos_form
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.GUARDARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GUARDARCAMBIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Restarurar_alumno = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.RestaurarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -56,6 +59,7 @@ Partial Class Alumnos_form
         Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.MenuStrip3.SuspendLayout()
+        Me.Restarurar_alumno.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -158,6 +162,7 @@ Partial Class Alumnos_form
         Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
+        Me.datalistado.ContextMenuStrip = Me.Restarurar_alumno
         Me.datalistado.Dock = System.Windows.Forms.DockStyle.Fill
         Me.datalistado.EnableHeadersVisualStyles = False
         Me.datalistado.Location = New System.Drawing.Point(0, 75)
@@ -321,6 +326,19 @@ Partial Class Alumnos_form
         Me.GUARDARCAMBIOSToolStripMenuItem.Size = New System.Drawing.Size(175, 25)
         Me.GUARDARCAMBIOSToolStripMenuItem.Text = "GUARDAR CAMBIOS"
         '
+        'Restarurar_alumno
+        '
+        Me.Restarurar_alumno.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RestaurarToolStripMenuItem})
+        Me.Restarurar_alumno.Name = "ContextMenuStrip1"
+        Me.Restarurar_alumno.Size = New System.Drawing.Size(181, 48)
+        '
+        'RestaurarToolStripMenuItem
+        '
+        Me.RestaurarToolStripMenuItem.Image = CType(resources.GetObject("RestaurarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.RestaurarToolStripMenuItem.Name = "RestaurarToolStripMenuItem"
+        Me.RestaurarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RestaurarToolStripMenuItem.Text = "Restaurar"
+        '
         'Alumnos_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -348,6 +366,7 @@ Partial Class Alumnos_form
         Me.Panel6.PerformLayout()
         Me.MenuStrip3.ResumeLayout(False)
         Me.MenuStrip3.PerformLayout()
+        Me.Restarurar_alumno.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -377,4 +396,6 @@ Partial Class Alumnos_form
     Friend WithEvents GUARDARCAMBIOSToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents txtdocumento As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Restarurar_alumno As ContextMenuStrip
+    Friend WithEvents RestaurarToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -98,17 +98,57 @@ Public Class Alumnos_form
         End Try
     End Sub
     Dim id_alumno As Integer
+    Dim estado As String
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         Try
-            Panel4.Visible = True
+
             id_alumno = datalistado.SelectedCells.Item(1).Value
             txtapellidoPaterno.Text = datalistado.SelectedCells.Item(2).Value
             txtapellidoMaterno.Text = datalistado.SelectedCells.Item(3).Value
             txtnombres.Text = datalistado.SelectedCells.Item(4).Value
             txtdocumento.Text = datalistado.SelectedCells.Item(5).Value
+            estado = datalistado.SelectedCells.Item(6).Value
+            If estado = "ELIMINADO" Then
+                restaurar_alumno()
+            Else
+                Panel4.Visible = True
+
+            End If
+
         Catch ex As Exception
 
         End Try
+    End Sub
+    Sub restaurar_alumno()
+        Dim result As DialogResult
+
+        result = MessageBox.Show("este alumno se elimino ¿desea volver a habilitar?", "Restauracion de registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
+            Dim cmd As SqlCommand
+            Try
+                For Each row As DataGridViewRow In datalistado.SelectedRows
+                    Dim idalumnoSeleccionado As Integer = Convert.ToInt32(row.Cells("idalumno").Value)
+                    Try
+                        abrir()
+                        cmd = New SqlCommand("Restaurar_alumno", conexion)
+                        cmd.CommandType = 4
+                        cmd.Parameters.AddWithValue("@idalumno", idalumnoSeleccionado)
+                        cmd.ExecuteNonQuery()
+                        cerrar()
+
+                    Catch ex As Exception
+                        MessageBox.Show(ex.Message)
+
+                    End Try
+                Next
+                Panel4.Visible = True
+                Call MOSTRAR()
+
+            Catch ex As Exception
+
+            End Try
+
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -144,5 +184,23 @@ Public Class Alumnos_form
                 End Try
             End If
         End If
+    End Sub
+
+    Private Sub RestaurarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestaurarToolStripMenuItem.Click
+        Try
+
+            id_alumno = datalistado.SelectedCells.Item(1).Value
+            txtapellidoPaterno.Text = datalistado.SelectedCells.Item(2).Value
+            txtapellidoMaterno.Text = datalistado.SelectedCells.Item(3).Value
+            txtnombres.Text = datalistado.SelectedCells.Item(4).Value
+            txtdocumento.Text = datalistado.SelectedCells.Item(5).Value
+            estado = datalistado.SelectedCells.Item(6).Value
+            If estado = "ELIMINADO" Then
+                restaurar_alumno()
+            End If
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
