@@ -141,7 +141,7 @@ Public Class Alumnos_form
 
                     End Try
                 Next
-                Panel4.Visible = True
+
                 Call MOSTRAR()
 
             Catch ex As Exception
