@@ -3,6 +3,8 @@ Public Class Alumnos_form
     Private Sub Alumnos_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MOSTRAR()
         Panel4.Visible = False
+        txtbuscar.Text = "buscar alumnos..."
+
 
     End Sub
 
@@ -26,9 +28,15 @@ Public Class Alumnos_form
             da.Fill(dt)
             datalistado.DataSource = dt
             cerrar()
-            Multilinea(datalistado)
-            datalistado.Columns(1).Visible = False
+            If dt.Rows.Count > 0 Then
 
+            End If
+
+            Multilinea(datalistado)
+                If datalistado.Columns.Count > 1 Then
+
+                    datalistado.Columns(1).Visible = False
+                End If
 
 
         Catch ex As Exception : MessageBox.Show(ex.Message)
@@ -202,5 +210,53 @@ Public Class Alumnos_form
         Catch ex As Exception
 
         End Try
+    End Sub
+    Sub buscar()
+        Dim dt As New DataTable
+        Dim da As SqlDataAdapter
+        Try
+            abrir()
+            da = New SqlDataAdapter("buscar_alumnos", conexion)
+            da.SelectCommand.CommandType = 4
+            da.SelectCommand.Parameters.AddWithValue("@letra", txtbuscar.Text)
+
+            da.Fill(dt)
+            datalistado.DataSource = dt
+            cerrar()
+
+            Multilinea(datalistado)
+            datalistado.Columns(1).Visible = True
+
+        Catch ex As Exception
+
+
+        End Try
+        For Each row As DataGridViewRow In datalistado.Rows
+            If row.Cells("Estado").Value = "ELIMINADO" Then
+                row.DefaultCellStyle.Font = New Font("segoe UI", 10, FontStyle.Strikeout Or FontStyle.Bold)
+                row.DefaultCellStyle.ForeColor = Color.Red
+            End If
+        Next
+
+
+    End Sub
+    Private Sub txtbuscar_TextChanged(sender As Object, e As EventArgs) Handles txtbuscar.TextChanged
+        If txtbuscar.Text <> "" And txtbuscar.Text <> "buscar alumnos..." Then
+
+            buscar()
+        Else
+            MOSTRAR()
+
+        End If
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub txtbuscar_Click(sender As Object, e As EventArgs) Handles txtbuscar.Click
+
+        txtbuscar.SelectAll()
+
     End Sub
 End Class

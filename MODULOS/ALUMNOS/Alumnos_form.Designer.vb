@@ -29,11 +29,13 @@ Partial Class Alumnos_form
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Restarurar_alumno = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.RestaurarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtdocumento = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -49,17 +51,15 @@ Partial Class Alumnos_form
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.GUARDARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GUARDARCAMBIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Restarurar_alumno = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.RestaurarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Restarurar_alumno.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.MenuStrip3.SuspendLayout()
-        Me.Restarurar_alumno.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -112,24 +112,24 @@ Partial Class Alumnos_form
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.txtbuscar)
         Me.Panel2.Controls.Add(Me.MenuStrip1)
         Me.Panel2.Location = New System.Drawing.Point(254, 13)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(338, 49)
         Me.Panel2.TabIndex = 1
         '
-        'TextBox1
+        'txtbuscar
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(57, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(263, 19)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "buscar alumnos..."
+        Me.txtbuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.txtbuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtbuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtbuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.txtbuscar.Location = New System.Drawing.Point(57, 15)
+        Me.txtbuscar.Name = "txtbuscar"
+        Me.txtbuscar.Size = New System.Drawing.Size(263, 19)
+        Me.txtbuscar.TabIndex = 0
+        Me.txtbuscar.Text = "buscar alumnos..."
         '
         'MenuStrip1
         '
@@ -183,6 +183,19 @@ Partial Class Alumnos_form
         Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
         Me.Eli.Name = "Eli"
         Me.Eli.ReadOnly = True
+        '
+        'Restarurar_alumno
+        '
+        Me.Restarurar_alumno.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RestaurarToolStripMenuItem})
+        Me.Restarurar_alumno.Name = "ContextMenuStrip1"
+        Me.Restarurar_alumno.Size = New System.Drawing.Size(124, 26)
+        '
+        'RestaurarToolStripMenuItem
+        '
+        Me.RestaurarToolStripMenuItem.Image = CType(resources.GetObject("RestaurarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.RestaurarToolStripMenuItem.Name = "RestaurarToolStripMenuItem"
+        Me.RestaurarToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
+        Me.RestaurarToolStripMenuItem.Text = "Restaurar"
         '
         'Panel4
         '
@@ -326,19 +339,6 @@ Partial Class Alumnos_form
         Me.GUARDARCAMBIOSToolStripMenuItem.Size = New System.Drawing.Size(175, 25)
         Me.GUARDARCAMBIOSToolStripMenuItem.Text = "GUARDAR CAMBIOS"
         '
-        'Restarurar_alumno
-        '
-        Me.Restarurar_alumno.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RestaurarToolStripMenuItem})
-        Me.Restarurar_alumno.Name = "ContextMenuStrip1"
-        Me.Restarurar_alumno.Size = New System.Drawing.Size(181, 48)
-        '
-        'RestaurarToolStripMenuItem
-        '
-        Me.RestaurarToolStripMenuItem.Image = CType(resources.GetObject("RestaurarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.RestaurarToolStripMenuItem.Name = "RestaurarToolStripMenuItem"
-        Me.RestaurarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RestaurarToolStripMenuItem.Text = "Restaurar"
-        '
         'Alumnos_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -360,20 +360,20 @@ Partial Class Alumnos_form
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Restarurar_alumno.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.MenuStrip3.ResumeLayout(False)
         Me.MenuStrip3.PerformLayout()
-        Me.Restarurar_alumno.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtbuscar As TextBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Label1 As Label

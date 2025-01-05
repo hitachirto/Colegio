@@ -35,6 +35,15 @@ Partial Class usuariosok
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Lblidusuario = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtLogin = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtNOMBRE = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.GUARDARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GUARDARCAMBIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
@@ -45,15 +54,6 @@ Partial Class usuariosok
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtLogin = New System.Windows.Forms.TextBox()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.txtNOMBRE = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
-        Me.GUARDARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GUARDARCAMBIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
@@ -64,8 +64,8 @@ Partial Class usuariosok
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -193,6 +193,84 @@ Partial Class usuariosok
         Me.Button2.Text = "Volver"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'txtLogin
+        '
+        Me.txtLogin.Location = New System.Drawing.Point(165, 58)
+        Me.txtLogin.Name = "txtLogin"
+        Me.txtLogin.Size = New System.Drawing.Size(233, 20)
+        Me.txtLogin.TabIndex = 5
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Location = New System.Drawing.Point(165, 94)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassword.TabIndex = 4
+        '
+        'txtNOMBRE
+        '
+        Me.txtNOMBRE.Location = New System.Drawing.Point(165, 27)
+        Me.txtNOMBRE.Name = "txtNOMBRE"
+        Me.txtNOMBRE.Size = New System.Drawing.Size(233, 20)
+        Me.txtNOMBRE.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label4.Location = New System.Drawing.Point(32, 58)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(64, 20)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Usuario"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label3.Location = New System.Drawing.Point(32, 94)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 20)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Contraseña"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label2.Location = New System.Drawing.Point(32, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(65, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Nombre"
+        '
+        'MenuStrip2
+        '
+        Me.MenuStrip2.BackColor = System.Drawing.Color.White
+        Me.MenuStrip2.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GUARDARToolStripMenuItem, Me.GUARDARCAMBIOSToolStripMenuItem})
+        Me.MenuStrip2.Location = New System.Drawing.Point(36, 186)
+        Me.MenuStrip2.Name = "MenuStrip2"
+        Me.MenuStrip2.Size = New System.Drawing.Size(282, 29)
+        Me.MenuStrip2.TabIndex = 7
+        Me.MenuStrip2.Text = "MenuStrip2"
+        '
+        'GUARDARToolStripMenuItem
+        '
+        Me.GUARDARToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.GUARDARToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.GUARDARToolStripMenuItem.Name = "GUARDARToolStripMenuItem"
+        Me.GUARDARToolStripMenuItem.Size = New System.Drawing.Size(99, 25)
+        Me.GUARDARToolStripMenuItem.Text = "GUARDAR"
+        '
+        'GUARDARCAMBIOSToolStripMenuItem
+        '
+        Me.GUARDARCAMBIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(1, Byte), Integer))
+        Me.GUARDARCAMBIOSToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.GUARDARCAMBIOSToolStripMenuItem.Name = "GUARDARCAMBIOSToolStripMenuItem"
+        Me.GUARDARCAMBIOSToolStripMenuItem.Size = New System.Drawing.Size(175, 25)
+        Me.GUARDARCAMBIOSToolStripMenuItem.Text = "GUARDAR CAMBIOS"
+        '
         'Panel5
         '
         Me.Panel5.Controls.Add(Me.CheckBox8)
@@ -300,84 +378,6 @@ Partial Class usuariosok
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Asignacion de Permisos"
         '
-        'txtLogin
-        '
-        Me.txtLogin.Location = New System.Drawing.Point(165, 58)
-        Me.txtLogin.Name = "txtLogin"
-        Me.txtLogin.Size = New System.Drawing.Size(233, 20)
-        Me.txtLogin.TabIndex = 5
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Location = New System.Drawing.Point(165, 94)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(100, 20)
-        Me.txtPassword.TabIndex = 4
-        '
-        'txtNOMBRE
-        '
-        Me.txtNOMBRE.Location = New System.Drawing.Point(165, 27)
-        Me.txtNOMBRE.Name = "txtNOMBRE"
-        Me.txtNOMBRE.Size = New System.Drawing.Size(233, 20)
-        Me.txtNOMBRE.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label4.Location = New System.Drawing.Point(32, 58)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 20)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Usuario"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label3.Location = New System.Drawing.Point(32, 94)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 20)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Contraseña"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label2.Location = New System.Drawing.Point(32, 27)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 20)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Nombre"
-        '
-        'MenuStrip2
-        '
-        Me.MenuStrip2.BackColor = System.Drawing.Color.White
-        Me.MenuStrip2.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GUARDARToolStripMenuItem, Me.GUARDARCAMBIOSToolStripMenuItem})
-        Me.MenuStrip2.Location = New System.Drawing.Point(36, 186)
-        Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(282, 29)
-        Me.MenuStrip2.TabIndex = 7
-        Me.MenuStrip2.Text = "MenuStrip2"
-        '
-        'GUARDARToolStripMenuItem
-        '
-        Me.GUARDARToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(1, Byte), Integer))
-        Me.GUARDARToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GUARDARToolStripMenuItem.Name = "GUARDARToolStripMenuItem"
-        Me.GUARDARToolStripMenuItem.Size = New System.Drawing.Size(99, 25)
-        Me.GUARDARToolStripMenuItem.Text = "GUARDAR"
-        '
-        'GUARDARCAMBIOSToolStripMenuItem
-        '
-        Me.GUARDARCAMBIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(1, Byte), Integer))
-        Me.GUARDARCAMBIOSToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GUARDARCAMBIOSToolStripMenuItem.Name = "GUARDARCAMBIOSToolStripMenuItem"
-        Me.GUARDARCAMBIOSToolStripMenuItem.Size = New System.Drawing.Size(175, 25)
-        Me.GUARDARCAMBIOSToolStripMenuItem.Text = "GUARDAR CAMBIOS"
-        '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
@@ -461,10 +461,10 @@ Partial Class usuariosok
         Me.Panel4.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)

@@ -173,4 +173,8 @@ Public Class usuariosok
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
+
+    Private Sub txtNOMBRE_TextChanged(sender As Object, e As EventArgs) Handles txtNOMBRE.TextChanged
+
+    End Sub
 End Class
