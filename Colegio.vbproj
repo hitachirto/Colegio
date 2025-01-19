@@ -93,6 +93,12 @@
     <Compile Include="MODULOS\matriculas\Matriculas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MODULOS\matriculas\SERIALIZACION.Designer.vb">
+      <DependentUpon>SERIALIZACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\matriculas\SERIALIZACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MODULOS\MENUPRINCIPAL\MENUPRINCIPALMATRICULAS.Designer.vb">
       <DependentUpon>MENUPRINCIPALMATRICULAS.vb</DependentUpon>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\matriculas\Matriculas.resx">
       <DependentUpon>Matriculas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\matriculas\SERIALIZACION.resx">
+      <DependentUpon>SERIALIZACION.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\MENUPRINCIPAL\MENUPRINCIPALMATRICULAS.resx">
       <DependentUpon>MENUPRINCIPALMATRICULAS.vb</DependentUpon>
