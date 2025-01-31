@@ -72,6 +72,7 @@ Partial Class Matriculas
         Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelPrincipal = New System.Windows.Forms.Panel()
+        Me.lblBUSQUEDA = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,6 +92,7 @@ Partial Class Matriculas
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.lblBUSQUEDA)
         Me.Panel2.Controls.Add(Me.txtbuscar)
         Me.Panel2.Controls.Add(Me.MenuStrip1)
         Me.Panel2.Location = New System.Drawing.Point(159, 14)
@@ -104,11 +106,10 @@ Partial Class Matriculas
         Me.txtbuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtbuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtbuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.txtbuscar.Location = New System.Drawing.Point(57, 15)
+        Me.txtbuscar.Location = New System.Drawing.Point(47, 14)
         Me.txtbuscar.Name = "txtbuscar"
         Me.txtbuscar.Size = New System.Drawing.Size(263, 19)
         Me.txtbuscar.TabIndex = 0
-        Me.txtbuscar.Text = "buscar alumnos..."
         '
         'MenuStrip1
         '
@@ -615,6 +616,17 @@ Partial Class Matriculas
         Me.PanelPrincipal.Size = New System.Drawing.Size(657, 733)
         Me.PanelPrincipal.TabIndex = 33
         '
+        'lblBUSQUEDA
+        '
+        Me.lblBUSQUEDA.AutoSize = True
+        Me.lblBUSQUEDA.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBUSQUEDA.ForeColor = System.Drawing.Color.White
+        Me.lblBUSQUEDA.Location = New System.Drawing.Point(85, 14)
+        Me.lblBUSQUEDA.Name = "lblBUSQUEDA"
+        Me.lblBUSQUEDA.Size = New System.Drawing.Size(145, 20)
+        Me.lblBUSQUEDA.TabIndex = 3
+        Me.lblBUSQUEDA.Text = "Buscar Alumno..."
+        '
         'Matriculas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -703,4 +715,5 @@ Partial Class Matriculas
     Friend WithEvents MenuStrip6 As MenuStrip
     Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
     Friend WithEvents PanelPrincipal As Panel
+    Friend WithEvents lblBUSQUEDA As Label
 End Class

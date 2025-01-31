@@ -37,7 +37,7 @@ Public Class Matriculas
         Dim da As SqlDataAdapter
         Try
             abrir()
-            da = New SqlDataAdapter("mostrar_Tipo_de_documentos_para_insertar_en_MATRICULAS()", conexion)
+            da = New SqlDataAdapter("mostrar_Tipo_de_documentos_para_insertar_en_MATRICULAS", conexion)
             da.Fill(dtComprobante)
             TXTCOMPROBANTE.DisplayMember = "COMPROBANTE"
             TXTCOMPROBANTE.ValueMember = "Id_serializacion"
@@ -69,5 +69,44 @@ Public Class Matriculas
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+    End Sub
+
+    Private Sub txtbuscar_TextChanged(sender As Object, e As EventArgs) Handles txtbuscar.TextChanged
+        If txtbuscar.Text = "" Then
+            lblBUSQUEDA.Visible = True
+            datalistadoalumnos.Visible = True
+
+        ElseIf txtbuscar.Text <> "" Then
+            lblBUSQUEDA.Visible = False
+            datalistadoalumnos.Visible = True
+
+            buscar_alumnos()
+        End If
+    End Sub
+    Sub buscar_alumnos()
+        Dim dt As New DataTable
+        Dim da As New SqlDataAdapter
+
+
+        Try
+            abrir()
+            da = New SqlDataAdapter("buscar_alumnos", conexion)
+            da.SelectCommand.CommandType = 4
+            da.SelectCommand.Parameters.AddWithValue("@letra", txtbuscar.Text)
+            da.Fill(dt)
+            datalistadoalumnos.DataSource = dt
+            datalistadoalumnos.Columns(0).Visible = False
+            datalistadoalumnos.Columns(1).Visible = False
+            datalistadoalumnos.Columns(2).Visible = False
+            datalistadoalumnos.Columns(3).Visible = False
+            datalistadoalumnos.Columns(4).Width = datalistadoalumnos.Width
+            datalistadoalumnos.Columns(5).Visible = False
+            datalistadoalumnos.Columns(6).Visible = False
+
+
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 End Class
