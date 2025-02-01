@@ -191,4 +191,26 @@ Public Class SERIALIZACION
 
         End Try
     End Sub
+
+    Private Sub txtnumeroinicio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnumeroinicio.KeyPress
+        NumerosyDecimales(txtnumeroinicio, e)
+
+    End Sub
+    Public Sub NumerosyDecimales(ByVal Cajatexto As Windows.Forms.TextBox, ByVal e As System.Windows.Forms.KeyPressEventArgs)
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+
+        ElseIf e.KeyChar = "." And Not Cajatexto.Text.IndexOf(".") Then
+            e.Handled = True
+        ElseIf e.KeyChar = "," Then
+            e.Handled = True
+        ElseIf e.KeyChar = "." Then
+            e.Handled = True
+        Else
+            e.Handled = True
+
+        End If
+    End Sub
 End Class

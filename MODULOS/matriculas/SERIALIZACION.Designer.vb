@@ -64,7 +64,7 @@ Partial Class SERIALIZACION
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 69)
+        Me.Panel1.Size = New System.Drawing.Size(811, 69)
         Me.Panel1.TabIndex = 1
         '
         'Button3
@@ -257,7 +257,7 @@ Partial Class SERIALIZACION
         Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(800, 490)
+        Me.datalistado.Size = New System.Drawing.Size(811, 403)
         Me.datalistado.TabIndex = 4
         '
         'Eli
@@ -274,9 +274,9 @@ Partial Class SERIALIZACION
         Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel3.Location = New System.Drawing.Point(652, 69)
+        Me.Panel3.Location = New System.Drawing.Point(663, 69)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(148, 490)
+        Me.Panel3.Size = New System.Drawing.Size(148, 403)
         Me.Panel3.TabIndex = 9
         '
         'PictureBox2
@@ -304,7 +304,7 @@ Partial Class SERIALIZACION
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 559)
+        Me.ClientSize = New System.Drawing.Size(811, 472)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.datalistado)
