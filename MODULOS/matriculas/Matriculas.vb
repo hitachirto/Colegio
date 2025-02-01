@@ -109,4 +109,15 @@ Public Class Matriculas
         End Try
 
     End Sub
+
+    Private Sub datalistadoalumnos_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistadoalumnos.CellClick
+        Try
+            idAlumno = datalistadoalumnos.SelectedCells.Item(1).Value
+            txtbuscar.Text = datalistadoalumnos.SelectedCells.Item(4).Value
+            datalistadoalumnos.Visible = False
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

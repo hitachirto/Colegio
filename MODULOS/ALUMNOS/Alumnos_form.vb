@@ -53,7 +53,7 @@ Public Class Alumnos_form
         Try
             Dim cmd As New SqlCommand
             abrir()
-            cmd = New SqlCommand("insertar_alumnos", conexion)
+            cmd = New SqlCommand("Insertar_alumnos", conexion)
             cmd.CommandType = 4
             cmd.Parameters.AddWithValue("@Apellido_Paterno", txtapellidoPaterno.Text)
             cmd.Parameters.AddWithValue("@Apellido_Materno", txtapellidoMaterno.Text)
