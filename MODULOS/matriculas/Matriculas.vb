@@ -48,6 +48,7 @@ Public Class Matriculas
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
     Private Sub TXTCOMPROBANTE_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TXTCOMPROBANTE.SelectedIndexChanged
         mostrar_numero_de_recibo()
     End Sub
@@ -119,5 +120,9 @@ Public Class Matriculas
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        SERIALIZACION.ShowDialog()
     End Sub
 End Class

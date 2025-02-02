@@ -73,6 +73,8 @@ Partial Class Matriculas
         Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelPrincipal = New System.Windows.Forms.Panel()
+        Me.MenuStrip5 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,6 +88,7 @@ Partial Class Matriculas
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip6.SuspendLayout()
         Me.PanelPrincipal.SuspendLayout()
+        Me.MenuStrip5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -199,6 +202,7 @@ Partial Class Matriculas
         Me.PanelMATRICULAS.Controls.Add(Me.Label3)
         Me.PanelMATRICULAS.Controls.Add(Me.Label2)
         Me.PanelMATRICULAS.Controls.Add(Me.MenuStrip3)
+        Me.PanelMATRICULAS.Controls.Add(Me.MenuStrip5)
         Me.PanelMATRICULAS.Location = New System.Drawing.Point(37, 85)
         Me.PanelMATRICULAS.Name = "PanelMATRICULAS"
         Me.PanelMATRICULAS.Size = New System.Drawing.Size(582, 487)
@@ -627,6 +631,23 @@ Partial Class Matriculas
         Me.PanelPrincipal.Size = New System.Drawing.Size(657, 733)
         Me.PanelPrincipal.TabIndex = 33
         '
+        'MenuStrip5
+        '
+        Me.MenuStrip5.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4})
+        Me.MenuStrip5.Location = New System.Drawing.Point(347, 302)
+        Me.MenuStrip5.Name = "MenuStrip5"
+        Me.MenuStrip5.Size = New System.Drawing.Size(156, 24)
+        Me.MenuStrip5.TabIndex = 31
+        Me.MenuStrip5.Text = "MenuStrip5"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripMenuItem4.Image = CType(resources.GetObject("ToolStripMenuItem4.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(28, 20)
+        '
         'Matriculas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -637,6 +658,7 @@ Partial Class Matriculas
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelPrincipal)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.MainMenuStrip = Me.MenuStrip5
         Me.Name = "Matriculas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Matriculas"
@@ -662,6 +684,8 @@ Partial Class Matriculas
         Me.MenuStrip6.ResumeLayout(False)
         Me.MenuStrip6.PerformLayout()
         Me.PanelPrincipal.ResumeLayout(False)
+        Me.MenuStrip5.ResumeLayout(False)
+        Me.MenuStrip5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -716,4 +740,6 @@ Partial Class Matriculas
     Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
     Friend WithEvents PanelPrincipal As Panel
     Friend WithEvents lblBUSQUEDA As Label
+    Friend WithEvents MenuStrip5 As MenuStrip
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
 End Class

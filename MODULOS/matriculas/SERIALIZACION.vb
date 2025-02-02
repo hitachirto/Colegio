@@ -213,4 +213,9 @@ Public Class SERIALIZACION
 
         End If
     End Sub
+
+    Private Sub txtnumerofin_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnumerofin.KeyPress
+        NumerosyDecimales(txtnumerofin, e)
+
+    End Sub
 End Class
