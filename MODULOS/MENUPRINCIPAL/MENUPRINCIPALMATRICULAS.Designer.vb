@@ -55,15 +55,15 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.MenuStrip7 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.MenuStrip7 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -454,6 +454,42 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel8.Size = New System.Drawing.Size(569, 69)
         Me.Panel8.TabIndex = 0
         '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel12.Location = New System.Drawing.Point(324, 63)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(129, 6)
+        Me.Panel12.TabIndex = 12
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel11.Location = New System.Drawing.Point(230, 63)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(94, 6)
+        Me.Panel11.TabIndex = 11
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.Yellow
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel10.Location = New System.Drawing.Point(90, 63)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(140, 6)
+        Me.Panel10.TabIndex = 10
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.Teal
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel9.Location = New System.Drawing.Point(0, 63)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(90, 6)
+        Me.Panel9.TabIndex = 9
+        '
         'MenuStrip7
         '
         Me.MenuStrip7.AutoSize = False
@@ -467,25 +503,15 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip7.TabIndex = 8
         Me.MenuStrip7.Text = "MenuStrip7"
         '
-        'ToolStripMenuItem7
+        'ToolStripMenuItem10
         '
-        Me.ToolStripMenuItem7.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStripMenuItem7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Black
-        Me.ToolStripMenuItem7.Image = CType(resources.GetObject("ToolStripMenuItem7.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(133, 25)
-        Me.ToolStripMenuItem7.Text = "Otros Pagos"
-        '
-        'ToolStripMenuItem8
-        '
-        Me.ToolStripMenuItem8.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStripMenuItem8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripMenuItem8.ForeColor = System.Drawing.Color.Black
-        Me.ToolStripMenuItem8.Image = CType(resources.GetObject("ToolStripMenuItem8.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(87, 25)
-        Me.ToolStripMenuItem8.Text = "Notas"
+        Me.ToolStripMenuItem10.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem10.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem10.Image = CType(resources.GetObject("ToolStripMenuItem10.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(88, 59)
+        Me.ToolStripMenuItem10.Text = "Pagos"
         '
         'ToolStripMenuItem9
         '
@@ -494,54 +520,28 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.ToolStripMenuItem9.ForeColor = System.Drawing.Color.Black
         Me.ToolStripMenuItem9.Image = CType(resources.GetObject("ToolStripMenuItem9.Image"), System.Drawing.Image)
         Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(143, 25)
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(143, 59)
         Me.ToolStripMenuItem9.Text = "Movimientos"
         '
-        'ToolStripMenuItem10
+        'ToolStripMenuItem8
         '
-        Me.ToolStripMenuItem10.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStripMenuItem10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripMenuItem10.ForeColor = System.Drawing.Color.Black
-        Me.ToolStripMenuItem10.Image = CType(resources.GetObject("ToolStripMenuItem10.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(88, 25)
-        Me.ToolStripMenuItem10.Text = "Pagos"
+        Me.ToolStripMenuItem8.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem8.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem8.Image = CType(resources.GetObject("ToolStripMenuItem8.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(87, 59)
+        Me.ToolStripMenuItem8.Text = "Notas"
         '
-        'Panel9
+        'ToolStripMenuItem7
         '
-        Me.Panel9.BackColor = System.Drawing.Color.Teal
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel9.Location = New System.Drawing.Point(0, 63)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(90, 6)
-        Me.Panel9.TabIndex = 9
-        '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.Color.Yellow
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel10.Location = New System.Drawing.Point(90, 63)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(140, 6)
-        Me.Panel10.TabIndex = 10
-        '
-        'Panel11
-        '
-        Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel11.Location = New System.Drawing.Point(230, 63)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(94, 6)
-        Me.Panel11.TabIndex = 11
-        '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel12.Location = New System.Drawing.Point(324, 63)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(129, 6)
-        Me.Panel12.TabIndex = 12
+        Me.ToolStripMenuItem7.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripMenuItem7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem7.Image = CType(resources.GetObject("ToolStripMenuItem7.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(133, 59)
+        Me.ToolStripMenuItem7.Text = "Otros Pagos"
         '
         'MENUPRINCIPALMATRICULAS
         '
