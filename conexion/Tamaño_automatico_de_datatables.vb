@@ -1,6 +1,6 @@
 ﻿Module Tamaño_automatico_de_datatables
     Public Sub Multilinea(ByRef List As DataGridView)
-        List.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        'List.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
         'List.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
         List.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         List.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter

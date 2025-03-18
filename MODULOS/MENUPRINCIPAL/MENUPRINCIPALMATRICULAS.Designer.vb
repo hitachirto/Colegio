@@ -42,8 +42,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.datalistadoCURSO_GRADO = New System.Windows.Forms.DataGridView()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
@@ -54,6 +53,8 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.datalistadoalumnos = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
@@ -64,6 +65,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -75,7 +77,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.datalistadoCURSO_GRADO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
         Me.MenuStrip6.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,6 +85,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         Me.MenuStrip7.SuspendLayout()
         Me.SuspendLayout()
@@ -285,7 +288,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
-        Me.Panel4.Controls.Add(Me.DataGridView1)
+        Me.Panel4.Controls.Add(Me.datalistadoCURSO_GRADO)
         Me.Panel4.Controls.Add(Me.Panel6)
         Me.Panel4.Controls.Add(Me.datalistado)
         Me.Panel4.Controls.Add(Me.Panel5)
@@ -295,37 +298,31 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel4.Size = New System.Drawing.Size(358, 579)
         Me.Panel4.TabIndex = 1
         '
-        'DataGridView1
+        'datalistadoCURSO_GRADO
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn1})
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 99)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(358, 359)
-        Me.DataGridView1.TabIndex = 6
-        '
-        'DataGridViewImageColumn1
-        '
-        Me.DataGridViewImageColumn1.HeaderText = ""
-        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.datalistadoCURSO_GRADO.AllowUserToAddRows = False
+        Me.datalistadoCURSO_GRADO.AllowUserToDeleteRows = False
+        Me.datalistadoCURSO_GRADO.AllowUserToResizeRows = False
+        Me.datalistadoCURSO_GRADO.BackgroundColor = System.Drawing.Color.White
+        Me.datalistadoCURSO_GRADO.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.datalistadoCURSO_GRADO.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.datalistadoCURSO_GRADO.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistadoCURSO_GRADO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistadoCURSO_GRADO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn1})
+        Me.datalistadoCURSO_GRADO.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.datalistadoCURSO_GRADO.EnableHeadersVisualStyles = False
+        Me.datalistadoCURSO_GRADO.Location = New System.Drawing.Point(0, 99)
+        Me.datalistadoCURSO_GRADO.Name = "datalistadoCURSO_GRADO"
+        Me.datalistadoCURSO_GRADO.ReadOnly = True
+        Me.datalistadoCURSO_GRADO.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistadoCURSO_GRADO.RowHeadersVisible = False
+        Me.datalistadoCURSO_GRADO.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datalistadoCURSO_GRADO.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistadoCURSO_GRADO.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistadoCURSO_GRADO.RowTemplate.Height = 40
+        Me.datalistadoCURSO_GRADO.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistadoCURSO_GRADO.Size = New System.Drawing.Size(358, 359)
+        Me.datalistadoCURSO_GRADO.TabIndex = 6
         '
         'Panel6
         '
@@ -434,12 +431,47 @@ Partial Class MENUPRINCIPALMATRICULAS
         '
         'Panel7
         '
+        Me.Panel7.Controls.Add(Me.datalistadoalumnos)
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(358, 63)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(569, 579)
         Me.Panel7.TabIndex = 2
+        '
+        'datalistadoalumnos
+        '
+        Me.datalistadoalumnos.AllowUserToAddRows = False
+        Me.datalistadoalumnos.AllowUserToDeleteRows = False
+        Me.datalistadoalumnos.AllowUserToResizeRows = False
+        Me.datalistadoalumnos.BackgroundColor = System.Drawing.Color.White
+        Me.datalistadoalumnos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.datalistadoalumnos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.datalistadoalumnos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistadoalumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistadoalumnos.ColumnHeadersVisible = False
+        Me.datalistadoalumnos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn2})
+        Me.datalistadoalumnos.EnableHeadersVisualStyles = False
+        Me.datalistadoalumnos.Location = New System.Drawing.Point(6, 75)
+        Me.datalistadoalumnos.Name = "datalistadoalumnos"
+        Me.datalistadoalumnos.ReadOnly = True
+        Me.datalistadoalumnos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistadoalumnos.RowHeadersVisible = False
+        Me.datalistadoalumnos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistadoalumnos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistadoalumnos.RowTemplate.Height = 40
+        Me.datalistadoalumnos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistadoalumnos.Size = New System.Drawing.Size(358, 359)
+        Me.datalistadoalumnos.TabIndex = 7
+        '
+        'DataGridViewImageColumn2
+        '
+        Me.DataGridViewImageColumn2.HeaderText = ""
+        Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        Me.DataGridViewImageColumn2.ReadOnly = True
+        Me.DataGridViewImageColumn2.Visible = False
         '
         'Panel8
         '
@@ -543,6 +575,15 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.ToolStripMenuItem7.Size = New System.Drawing.Size(133, 59)
         Me.ToolStripMenuItem7.Text = "Otros Pagos"
         '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = ""
+        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.DataGridViewImageColumn1.Visible = False
+        '
         'MENUPRINCIPALMATRICULAS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -573,7 +614,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.datalistadoCURSO_GRADO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.MenuStrip6.ResumeLayout(False)
@@ -584,6 +625,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
+        CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.MenuStrip7.ResumeLayout(False)
         Me.MenuStrip7.PerformLayout()
@@ -619,8 +661,7 @@ Partial Class MENUPRINCIPALMATRICULAS
     Friend WithEvents Panel6 As Panel
     Friend WithEvents MenuStrip6 As MenuStrip
     Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents datalistadoCURSO_GRADO As DataGridView
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents MenuStrip7 As MenuStrip
@@ -632,4 +673,7 @@ Partial Class MENUPRINCIPALMATRICULAS
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Panel10 As Panel
+    Friend WithEvents datalistadoalumnos As DataGridView
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
 End Class
