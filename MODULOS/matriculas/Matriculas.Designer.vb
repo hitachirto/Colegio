@@ -75,10 +75,10 @@ Partial Class Matriculas
         Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelPrincipal = New System.Windows.Forms.Panel()
-        Me.datalistadoNumero_de_recibo = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.MenuStrip7 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.datalistadoNumero_de_recibo = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,8 +93,8 @@ Partial Class Matriculas
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip6.SuspendLayout()
         Me.PanelPrincipal.SuspendLayout()
-        CType(Me.datalistadoNumero_de_recibo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip7.SuspendLayout()
+        CType(Me.datalistadoNumero_de_recibo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -107,7 +107,7 @@ Partial Class Matriculas
         Me.Panel2.Location = New System.Drawing.Point(37, 14)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(503, 49)
-        Me.Panel2.TabIndex = 2
+        Me.Panel2.TabIndex = 1
         '
         'lblBUSQUEDA
         '
@@ -220,7 +220,7 @@ Partial Class Matriculas
         Me.TXTNUMERODERECIBO.Location = New System.Drawing.Point(174, 341)
         Me.TXTNUMERODERECIBO.Name = "TXTNUMERODERECIBO"
         Me.TXTNUMERODERECIBO.Size = New System.Drawing.Size(100, 20)
-        Me.TXTNUMERODERECIBO.TabIndex = 30
+        Me.TXTNUMERODERECIBO.TabIndex = 13
         Me.TXTNUMERODERECIBO.Text = "0"
         '
         'txtnro
@@ -241,7 +241,7 @@ Partial Class Matriculas
         Me.TXTCOMPROBANTE.Location = New System.Drawing.Point(174, 304)
         Me.TXTCOMPROBANTE.Name = "TXTCOMPROBANTE"
         Me.TXTCOMPROBANTE.Size = New System.Drawing.Size(170, 21)
-        Me.TXTCOMPROBANTE.TabIndex = 28
+        Me.TXTCOMPROBANTE.TabIndex = 11
         '
         'Label10
         '
@@ -262,7 +262,7 @@ Partial Class Matriculas
         Me.TXTFECHA.MinDate = New Date(2025, 1, 5, 17, 15, 27, 0)
         Me.TXTFECHA.Name = "TXTFECHA"
         Me.TXTFECHA.Size = New System.Drawing.Size(138, 26)
-        Me.TXTFECHA.TabIndex = 26
+        Me.TXTFECHA.TabIndex = 10
         Me.TXTFECHA.Value = New Date(2025, 1, 5, 17, 15, 27, 0)
         '
         'Label9
@@ -280,7 +280,7 @@ Partial Class Matriculas
         Me.TXTCANTIDAD_DE_CUOTAS.Location = New System.Drawing.Point(446, 193)
         Me.TXTCANTIDAD_DE_CUOTAS.Name = "TXTCANTIDAD_DE_CUOTAS"
         Me.TXTCANTIDAD_DE_CUOTAS.Size = New System.Drawing.Size(100, 20)
-        Me.TXTCANTIDAD_DE_CUOTAS.TabIndex = 24
+        Me.TXTCANTIDAD_DE_CUOTAS.TabIndex = 8
         '
         'Label8
         '
@@ -307,7 +307,7 @@ Partial Class Matriculas
         Me.TXTCOSTO_PENSION.Location = New System.Drawing.Point(446, 160)
         Me.TXTCOSTO_PENSION.Name = "TXTCOSTO_PENSION"
         Me.TXTCOSTO_PENSION.Size = New System.Drawing.Size(100, 20)
-        Me.TXTCOSTO_PENSION.TabIndex = 21
+        Me.TXTCOSTO_PENSION.TabIndex = 6
         Me.TXTCOSTO_PENSION.Text = "0"
         '
         'txtsaldo
@@ -315,7 +315,7 @@ Partial Class Matriculas
         Me.txtsaldo.Location = New System.Drawing.Point(174, 226)
         Me.txtsaldo.Name = "txtsaldo"
         Me.txtsaldo.Size = New System.Drawing.Size(100, 20)
-        Me.txtsaldo.TabIndex = 20
+        Me.txtsaldo.TabIndex = 9
         '
         'Label6
         '
@@ -344,14 +344,14 @@ Partial Class Matriculas
         Me.txtimporte.Location = New System.Drawing.Point(174, 193)
         Me.txtimporte.Name = "txtimporte"
         Me.txtimporte.Size = New System.Drawing.Size(100, 20)
-        Me.txtimporte.TabIndex = 17
+        Me.txtimporte.TabIndex = 7
         '
         'txtcosto_MATRICULA
         '
         Me.txtcosto_MATRICULA.Location = New System.Drawing.Point(174, 158)
         Me.txtcosto_MATRICULA.Name = "txtcosto_MATRICULA"
         Me.txtcosto_MATRICULA.Size = New System.Drawing.Size(100, 20)
-        Me.txtcosto_MATRICULA.TabIndex = 16
+        Me.txtcosto_MATRICULA.TabIndex = 5
         '
         'txthorario
         '
@@ -359,7 +359,7 @@ Partial Class Matriculas
         Me.txthorario.Location = New System.Drawing.Point(212, 96)
         Me.txthorario.Name = "txthorario"
         Me.txthorario.Size = New System.Drawing.Size(226, 21)
-        Me.txthorario.TabIndex = 15
+        Me.txthorario.TabIndex = 4
         '
         'TXTSECCION
         '
@@ -367,7 +367,7 @@ Partial Class Matriculas
         Me.TXTSECCION.Location = New System.Drawing.Point(212, 60)
         Me.TXTSECCION.Name = "TXTSECCION"
         Me.TXTSECCION.Size = New System.Drawing.Size(226, 21)
-        Me.TXTSECCION.TabIndex = 14
+        Me.TXTSECCION.TabIndex = 3
         '
         'TXTGRADO
         '
@@ -375,7 +375,7 @@ Partial Class Matriculas
         Me.TXTGRADO.Location = New System.Drawing.Point(212, 26)
         Me.TXTGRADO.Name = "TXTGRADO"
         Me.TXTGRADO.Size = New System.Drawing.Size(226, 21)
-        Me.TXTGRADO.TabIndex = 13
+        Me.TXTGRADO.TabIndex = 2
         '
         'Label5
         '
@@ -395,7 +395,7 @@ Partial Class Matriculas
         Me.Button2.Location = New System.Drawing.Point(200, 416)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(351, 29)
-        Me.Button2.TabIndex = 9
+        Me.Button2.TabIndex = 14
         Me.Button2.Text = "Ya fue Gestionado en Otra Institucion"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -457,7 +457,7 @@ Partial Class Matriculas
         Me.MenuStrip5.Location = New System.Drawing.Point(347, 302)
         Me.MenuStrip5.Name = "MenuStrip5"
         Me.MenuStrip5.Size = New System.Drawing.Size(36, 24)
-        Me.MenuStrip5.TabIndex = 31
+        Me.MenuStrip5.TabIndex = 12
         Me.MenuStrip5.Text = "MenuStrip5"
         '
         'ToolStripMenuItem4
@@ -654,6 +654,23 @@ Partial Class Matriculas
         Me.PanelPrincipal.Size = New System.Drawing.Size(657, 733)
         Me.PanelPrincipal.TabIndex = 33
         '
+        'MenuStrip7
+        '
+        Me.MenuStrip7.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6})
+        Me.MenuStrip7.Location = New System.Drawing.Point(543, 25)
+        Me.MenuStrip7.Name = "MenuStrip7"
+        Me.MenuStrip7.Size = New System.Drawing.Size(36, 24)
+        Me.MenuStrip7.TabIndex = 33
+        Me.MenuStrip7.Text = "MenuStrip7"
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.Font = New System.Drawing.Font("Segoe UI", 19.0!)
+        Me.ToolStripMenuItem6.Image = CType(resources.GetObject("ToolStripMenuItem6.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(28, 20)
+        '
         'datalistadoNumero_de_recibo
         '
         Me.datalistadoNumero_de_recibo.AllowUserToAddRows = False
@@ -684,23 +701,6 @@ Partial Class Matriculas
         Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
         Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
         Me.DataGridViewImageColumn1.ReadOnly = True
-        '
-        'MenuStrip7
-        '
-        Me.MenuStrip7.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6})
-        Me.MenuStrip7.Location = New System.Drawing.Point(543, 25)
-        Me.MenuStrip7.Name = "MenuStrip7"
-        Me.MenuStrip7.Size = New System.Drawing.Size(156, 24)
-        Me.MenuStrip7.TabIndex = 33
-        Me.MenuStrip7.Text = "MenuStrip7"
-        '
-        'ToolStripMenuItem6
-        '
-        Me.ToolStripMenuItem6.Font = New System.Drawing.Font("Segoe UI", 19.0!)
-        Me.ToolStripMenuItem6.Image = CType(resources.GetObject("ToolStripMenuItem6.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(28, 20)
         '
         'Matriculas
         '
@@ -741,9 +741,9 @@ Partial Class Matriculas
         Me.MenuStrip6.PerformLayout()
         Me.PanelPrincipal.ResumeLayout(False)
         Me.PanelPrincipal.PerformLayout()
-        CType(Me.datalistadoNumero_de_recibo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip7.ResumeLayout(False)
         Me.MenuStrip7.PerformLayout()
+        CType(Me.datalistadoNumero_de_recibo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

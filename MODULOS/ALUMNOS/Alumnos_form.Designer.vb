@@ -220,7 +220,7 @@ Partial Class Alumnos_form
         Me.txtdocumento.Location = New System.Drawing.Point(205, 130)
         Me.txtdocumento.Name = "txtdocumento"
         Me.txtdocumento.Size = New System.Drawing.Size(233, 20)
-        Me.txtdocumento.TabIndex = 12
+        Me.txtdocumento.TabIndex = 5
         '
         'Label5
         '
@@ -266,7 +266,7 @@ Partial Class Alumnos_form
         Me.txtapellidoMaterno.Location = New System.Drawing.Point(205, 58)
         Me.txtapellidoMaterno.Name = "txtapellidoMaterno"
         Me.txtapellidoMaterno.Size = New System.Drawing.Size(233, 20)
-        Me.txtapellidoMaterno.TabIndex = 5
+        Me.txtapellidoMaterno.TabIndex = 3
         '
         'txtnombres
         '
@@ -280,7 +280,7 @@ Partial Class Alumnos_form
         Me.txtapellidoPaterno.Location = New System.Drawing.Point(205, 27)
         Me.txtapellidoPaterno.Name = "txtapellidoPaterno"
         Me.txtapellidoPaterno.Size = New System.Drawing.Size(233, 20)
-        Me.txtapellidoPaterno.TabIndex = 3
+        Me.txtapellidoPaterno.TabIndex = 2
         '
         'Label4
         '

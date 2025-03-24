@@ -43,6 +43,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.datalistadoCURSO_GRADO = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.MenuStrip6 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
@@ -53,6 +54,10 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PanelPAGOS = New System.Windows.Forms.Panel()
+        Me.datalistado_detalle_de_matricula = New System.Windows.Forms.DataGridView()
+        Me.EL = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.S = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.datalistadoalumnos = New System.Windows.Forms.DataGridView()
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel8 = New System.Windows.Forms.Panel()
@@ -61,11 +66,11 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.MenuStrip7 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TPAGOS = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.panel_otra_institucion = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -85,6 +90,8 @@ Partial Class MENUPRINCIPALMATRICULAS
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        Me.PanelPAGOS.SuspendLayout()
+        CType(Me.datalistado_detalle_de_matricula, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         Me.MenuStrip7.SuspendLayout()
@@ -324,6 +331,15 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.datalistadoCURSO_GRADO.Size = New System.Drawing.Size(358, 359)
         Me.datalistadoCURSO_GRADO.TabIndex = 6
         '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = ""
+        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.DataGridViewImageColumn1.Visible = False
+        '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.MenuStrip6)
@@ -431,6 +447,8 @@ Partial Class MENUPRINCIPALMATRICULAS
         '
         'Panel7
         '
+        Me.Panel7.Controls.Add(Me.PanelPAGOS)
+        Me.Panel7.Controls.Add(Me.panel_otra_institucion)
         Me.Panel7.Controls.Add(Me.datalistadoalumnos)
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
@@ -438,6 +456,55 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(569, 579)
         Me.Panel7.TabIndex = 2
+        '
+        'PanelPAGOS
+        '
+        Me.PanelPAGOS.Controls.Add(Me.datalistado_detalle_de_matricula)
+        Me.PanelPAGOS.Location = New System.Drawing.Point(6, 463)
+        Me.PanelPAGOS.Name = "PanelPAGOS"
+        Me.PanelPAGOS.Size = New System.Drawing.Size(232, 104)
+        Me.PanelPAGOS.TabIndex = 8
+        '
+        'datalistado_detalle_de_matricula
+        '
+        Me.datalistado_detalle_de_matricula.AllowUserToAddRows = False
+        Me.datalistado_detalle_de_matricula.AllowUserToDeleteRows = False
+        Me.datalistado_detalle_de_matricula.AllowUserToResizeRows = False
+        Me.datalistado_detalle_de_matricula.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado_detalle_de_matricula.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.datalistado_detalle_de_matricula.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.datalistado_detalle_de_matricula.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado_detalle_de_matricula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado_detalle_de_matricula.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EL, Me.S})
+        Me.datalistado_detalle_de_matricula.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.datalistado_detalle_de_matricula.EnableHeadersVisualStyles = False
+        Me.datalistado_detalle_de_matricula.Location = New System.Drawing.Point(0, 0)
+        Me.datalistado_detalle_de_matricula.Name = "datalistado_detalle_de_matricula"
+        Me.datalistado_detalle_de_matricula.ReadOnly = True
+        Me.datalistado_detalle_de_matricula.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado_detalle_de_matricula.RowHeadersVisible = False
+        Me.datalistado_detalle_de_matricula.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistado_detalle_de_matricula.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistado_detalle_de_matricula.RowTemplate.Height = 40
+        Me.datalistado_detalle_de_matricula.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado_detalle_de_matricula.Size = New System.Drawing.Size(232, 104)
+        Me.datalistado_detalle_de_matricula.TabIndex = 8
+        '
+        'EL
+        '
+        Me.EL.HeaderText = ""
+        Me.EL.Image = CType(resources.GetObject("EL.Image"), System.Drawing.Image)
+        Me.EL.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.EL.Name = "EL"
+        Me.EL.ReadOnly = True
+        '
+        'S
+        '
+        Me.S.HeaderText = ""
+        Me.S.Name = "S"
+        Me.S.ReadOnly = True
+        Me.S.Text = "PAGAR"
+        Me.S.UseColumnTextForButtonValue = True
         '
         'datalistadoalumnos
         '
@@ -527,7 +594,7 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip7.AutoSize = False
         Me.MenuStrip7.BackColor = System.Drawing.Color.White
         Me.MenuStrip7.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem10, Me.ToolStripMenuItem9, Me.ToolStripMenuItem8, Me.ToolStripMenuItem7})
+        Me.MenuStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TPAGOS, Me.ToolStripMenuItem9, Me.ToolStripMenuItem8, Me.ToolStripMenuItem7})
         Me.MenuStrip7.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip7.Name = "MenuStrip7"
         Me.MenuStrip7.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -535,15 +602,15 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.MenuStrip7.TabIndex = 8
         Me.MenuStrip7.Text = "MenuStrip7"
         '
-        'ToolStripMenuItem10
+        'TPAGOS
         '
-        Me.ToolStripMenuItem10.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStripMenuItem10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripMenuItem10.ForeColor = System.Drawing.Color.Black
-        Me.ToolStripMenuItem10.Image = CType(resources.GetObject("ToolStripMenuItem10.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(88, 59)
-        Me.ToolStripMenuItem10.Text = "Pagos"
+        Me.TPAGOS.BackColor = System.Drawing.Color.Transparent
+        Me.TPAGOS.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TPAGOS.ForeColor = System.Drawing.Color.Black
+        Me.TPAGOS.Image = CType(resources.GetObject("TPAGOS.Image"), System.Drawing.Image)
+        Me.TPAGOS.Name = "TPAGOS"
+        Me.TPAGOS.Size = New System.Drawing.Size(88, 59)
+        Me.TPAGOS.Text = "Pagos"
         '
         'ToolStripMenuItem9
         '
@@ -575,14 +642,12 @@ Partial Class MENUPRINCIPALMATRICULAS
         Me.ToolStripMenuItem7.Size = New System.Drawing.Size(133, 59)
         Me.ToolStripMenuItem7.Text = "Otros Pagos"
         '
-        'DataGridViewImageColumn1
+        'panel_otra_institucion
         '
-        Me.DataGridViewImageColumn1.HeaderText = ""
-        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.ReadOnly = True
-        Me.DataGridViewImageColumn1.Visible = False
+        Me.panel_otra_institucion.Location = New System.Drawing.Point(244, 463)
+        Me.panel_otra_institucion.Name = "panel_otra_institucion"
+        Me.panel_otra_institucion.Size = New System.Drawing.Size(120, 94)
+        Me.panel_otra_institucion.TabIndex = 9
         '
         'MENUPRINCIPALMATRICULAS
         '
@@ -625,6 +690,8 @@ Partial Class MENUPRINCIPALMATRICULAS
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
+        Me.PanelPAGOS.ResumeLayout(False)
+        CType(Me.datalistado_detalle_de_matricula, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistadoalumnos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.MenuStrip7.ResumeLayout(False)
@@ -666,7 +733,7 @@ Partial Class MENUPRINCIPALMATRICULAS
     Friend WithEvents Panel8 As Panel
     Friend WithEvents MenuStrip7 As MenuStrip
     Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
+    Friend WithEvents TPAGOS As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
     Friend WithEvents Panel9 As Panel
@@ -676,4 +743,9 @@ Partial Class MENUPRINCIPALMATRICULAS
     Friend WithEvents datalistadoalumnos As DataGridView
     Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents PanelPAGOS As Panel
+    Friend WithEvents datalistado_detalle_de_matricula As DataGridView
+    Friend WithEvents EL As DataGridViewImageColumn
+    Friend WithEvents S As DataGridViewButtonColumn
+    Friend WithEvents panel_otra_institucion As Panel
 End Class

@@ -81,6 +81,12 @@
     <Compile Include="MODULOS\ALUMNOS\Alumnos_form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MODULOS\CONTROL_DE_PAGOS\PAGAR_PENSIONES.Designer.vb">
+      <DependentUpon>PAGAR_PENSIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CONTROL_DE_PAGOS\PAGAR_PENSIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MODULOS\LOGIN\LOGIN.Designer.vb">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </Compile>
@@ -131,6 +137,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MODULOS\ALUMNOS\Alumnos_form.resx">
       <DependentUpon>Alumnos_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CONTROL_DE_PAGOS\PAGAR_PENSIONES.resx">
+      <DependentUpon>PAGAR_PENSIONES.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
